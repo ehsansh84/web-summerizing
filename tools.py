@@ -5,6 +5,8 @@ from sumy.summarizers.lex_rank import LexRankSummarizer
 import nltk
 from bs4 import BeautifulSoup
 
+SENTENCE_NUMBER = 2
+
 
 def get_contents(url: str) -> str:
     result = requests.get(url)
@@ -20,7 +22,7 @@ def summarizer(text: str) -> str:
     summarizer_lex = LexRankSummarizer()
 
     # Summarize using LexRank (e.g., 2 sentences)
-    summary = summarizer_lex(parser.document, 5)
+    summary = summarizer_lex(parser.document, SENTENCE_NUMBER)
 
     # Convert summary to string
     lex_summary = ""

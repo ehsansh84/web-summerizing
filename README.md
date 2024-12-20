@@ -14,4 +14,8 @@ libraries like: JS Summarize can be downloaded from: https://github.com/wkallhof
   - Open this url in your browser: `localhost:8000`
   - Put a url in the input box and hit the button
 
+I used these links to test the project:
+- https://www.york.ac.uk/teaching/cws/wws/webpage1.html
+- https://en.wikipedia.org/wiki/Text-based_web_browser
+- https://catdir.loc.gov/catdir/enhancements/fy0711/2006051179-s.html
 ``
