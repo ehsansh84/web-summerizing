@@ -1,0 +1,9 @@
+requests
+gensim
+beautifulsoup4
+nltk
+sumy
+fastapi
+uvicorn
+jinja2
+python-multipart

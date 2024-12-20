@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Content Viewer</title>
+</head>
+<body>
+    <h1>Enter a URL to Fetch Content</h1>
+    <form action="/fetch-content/" method="post">
+        <input type="url" name="url" placeholder="Enter URL" required style="width: 300px;">
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if content %}
+        <h2>Extracted Content:</h2>
+        <pre style="white-space: pre-wrap; word-wrap: break-word;">{{ content }}</pre>
+    {% endif %}
+</body>
+</html>
